@@ -26,6 +26,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
 * Install by brew
   * rvm
   * nvm
+  * htop
   * tree
   * watch
   * wget

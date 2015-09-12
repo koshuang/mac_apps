@@ -148,6 +148,7 @@ install_app_from_bz "iTerm" "https://iterm2.com/downloads/stable/iTerm2-2_1_1.zi
 
 install_app_from_pkg "Docker" "https://github.com/docker/toolbox/releases/download/v1.8.2/DockerToolbox-1.8.2.pkg"
 
+install_by_homebrew "htop"
 install_by_homebrew "tree"
 install_by_homebrew "watch"
 install_by_homebrew "wget"

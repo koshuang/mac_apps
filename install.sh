@@ -10,7 +10,7 @@ function install_app_from_dmg {
 
   if [ -d "$app_folder" ]
   then
-    echo "$app installed."
+    echo "$app aleady installed."
   else
     echo "Installing $app"
 
@@ -27,7 +27,7 @@ function install_app_from_dmg {
     cp -R "$volumn_path/$app.app" /Applications
     hdiutil unmount "$volumn_path"
 
-    echo "$app_folder has been installed."
+    echo "$app has been installed."
   fi
 }
 
@@ -39,7 +39,7 @@ function install_app_from_bz {
 
   if [ -d "$app_folder" ]
   then
-    echo "$app installed."
+    echo "$app aleady installed."
   else
     echo "Installing $app"
 
@@ -55,7 +55,34 @@ function install_app_from_bz {
     tar -zxvf "$app.app.tar.bz2"
     mv "$app.app" /Applications
 
-    echo "$app_folder has been installed."
+    echo "$app has been installed."
+  fi
+}
+
+function install_app_from_pkg {
+  app=$1
+  url=$2
+  pkg_file="$app.pkg"
+  app_folder="/Applications/$app"
+
+  if [ -d "$app_folder" ]
+  then
+    echo "$app aleady installed."
+  else
+    echo "Installing $app"
+
+    # download dmg if it is not existed
+    if [ -e "$pkg_file" ]
+    then
+      echo "$pkg_file existed"
+    else
+      echo "download $pkg_file"
+      curl -L -o "$pkg_file" "$url"
+    fi
+
+    sudo installer -verboseR -pkg "$pkg_file" -target /
+
+    echo "$app has been installed."
   fi
 }
 
@@ -72,3 +99,4 @@ install_app_from_dmg "Evernote" "http://evernote.com/download/get.php?file=Evern
 install_app_from_dmg "Sequel Pro" "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg" "Sequel Pro 1.0.2"
 install_app_from_bz "FileZilla" "http://downloads.sourceforge.net/project/filezilla/FileZilla_Client/3.9.0.6/FileZilla_3.9.0.6_macosx-x86.app.tar.bz2"
 install_app_from_bz "Atom" "https://atom.io/download/mac"
+install_app_from_pkg "Docker" "https://github.com/docker/toolbox/releases/download/v1.8.2/DockerToolbox-1.8.2.pkg"

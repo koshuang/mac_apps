@@ -154,6 +154,7 @@ install_by_homebrew "wget"
 install_by_homebrew "tmux"
 install_by_homebrew "nvm"
 install_by_homebrew "git-flow"
+install_by_homebrew "reattach-to-user-namespace"
 
 install_rvm
 

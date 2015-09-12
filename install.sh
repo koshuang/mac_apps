@@ -3,9 +3,10 @@
 function install_app_from_dmg {
   app=$1
   url=$2
+  volumn_name="${3:-$app}" # default as app
   dmg_file="$app.dmg"
   app_folder="/Applications/$app.app"
-  volumn_path="/Volumes/$app"
+  volumn_path="/Volumes/$volumn_name"
 
   if [ -d "$app_folder" ]
   then
@@ -33,11 +34,8 @@ function install_app_from_dmg {
 function install_app_from_bz {
   app=$1
   url=$2
-  volumn_name="${3:-$app}" # default as app
-
   bz_file="$app.app.tar.bz2"
   app_folder="/Applications/$app.app"
-  volumn_path="/Volumes/$volumn_name"
 
   if [ -d "$app_folder" ]
   then
@@ -64,7 +62,7 @@ function install_app_from_bz {
 cd ~/Downloads
 
 install_app_from_dmg "Google Chrome" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
-install_app_from_dmg "FirefoxNightly" "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-43.0a1.en-US.mac.dmg"
+install_app_from_dmg "FirefoxNightly" "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-43.0a1.en-US.mac.dmg" "Nightly"
 install_app_from_dmg "Spotify" "http://download.spotify.com/Spotify.dmg"
 install_app_from_dmg "Skype" "http://www.skype.com/go/getskype-macosx.dmg"
 install_app_from_dmg "Dropbox" "https://www.dropbox.com/download?plat=mac"
@@ -73,3 +71,4 @@ install_app_from_dmg "SourceTree" "http://downloads.atlassian.com/software/sourc
 install_app_from_dmg "Evernote" "http://evernote.com/download/get.php?file=EvernoteMac"
 install_app_from_dmg "Sequel Pro" "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg" "Sequel Pro 1.0.2"
 install_app_from_bz "FileZilla" "http://downloads.sourceforge.net/project/filezilla/FileZilla_Client/3.9.0.6/FileZilla_3.9.0.6_macosx-x86.app.tar.bz2"
+install_app_from_bz "Atom" "https://atom.io/download/mac"

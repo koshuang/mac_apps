@@ -32,6 +32,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * tmux
   * zsh & oh my sh
   * vim & spf13
+  * git-flow
 
 
 ## How to contribute

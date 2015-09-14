@@ -35,6 +35,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * vim & spf13
   * git-flow
   * reattach-to-user-namespace
+  * ansible
 
 
 ## How to contribute

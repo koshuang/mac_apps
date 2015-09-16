@@ -157,6 +157,7 @@ install_by_homebrew "nvm"
 install_by_homebrew "git-flow"
 install_by_homebrew "reattach-to-user-namespace"
 install_by_homebrew "ansible"
+install_by_homebrew "hub"
 
 install_rvm
 

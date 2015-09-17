@@ -52,6 +52,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * minimap-find-and-replace
   * minimap-git-diff
   * minimap-highlight-selected
+  * phantomjs
 
 
 ## How to contribute

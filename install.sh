@@ -127,6 +127,17 @@ function install_rvm {
   fi
 }
 
+function install_for_atom {
+  package=$1
+
+  if apm ls | grep -q "${package}"; then
+    echo "atom's package ->  $package already installed."
+  else
+    apm install "$package"
+    echo "atom's package -> $package has been installed."
+  fi
+}
+
 cd ~/Downloads
 
 install_homebrew
@@ -169,3 +180,19 @@ install_oh_my_zsh
 install_by_homebrew "vim"
 # sudo ln -fs /usr/local/bin/vim /usr/bin/vi
 install_spf13
+
+# Atom plugins
+install_for_atom "autocomplete-ruby"
+install_for_atom "Atom-Syntax-highlighting-for-Sass"
+install_for_atom "highlight-selected"
+install_for_atom "esformatter"
+install_for_atom "jsformat"
+install_for_atom "jshint"
+install_for_atom "language-docker"
+install_for_atom "linter"
+install_for_atom "linter-jshint"
+install_for_atom "merge-conflicts"
+install_for_atom "minimap"
+install_for_atom "minimap-find-and-replace"
+install_for_atom "minimap-git-diff"
+install_for_atom "minimap-highlight-selected"

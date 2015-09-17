@@ -37,6 +37,21 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * reattach-to-user-namespace
   * ansible
   * hub
+* Install packages for Atom
+  * autocomplete-ruby
+  * Atom-Syntax-highlighting-for-Sass
+  * esformatter
+  * highlight-selected
+  * jsformat
+  * jshint
+  * language-docker
+  * linter
+  * linter-jshint
+  * merge-conflicts
+  * minimap
+  * minimap-find-and-replace
+  * minimap-git-diff
+  * minimap-highlight-selected
 
 
 ## How to contribute

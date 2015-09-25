@@ -170,6 +170,7 @@ install_by_homebrew "reattach-to-user-namespace"
 install_by_homebrew "ansible"
 install_by_homebrew "hub"
 install_by_homebrew "phantomjs"
+install_by_homebrew "tig"
 
 install_rvm
 

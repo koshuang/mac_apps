@@ -37,6 +37,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * reattach-to-user-namespace
   * ansible
   * hub
+  * tig
 * Install packages for Atom
   * autocomplete-ruby
   * Atom-Syntax-highlighting-for-Sass

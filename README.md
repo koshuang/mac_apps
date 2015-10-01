@@ -54,6 +54,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * minimap-git-diff
   * minimap-highlight-selected
   * phantomjs
+  * incremental-search
 
 
 ## How to contribute

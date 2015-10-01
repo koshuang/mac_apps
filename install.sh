@@ -199,3 +199,5 @@ install_for_atom "minimap-find-and-replace"
 install_for_atom "minimap-git-diff"
 install_for_atom "minimap-highlight-selected"
 install_for_atom "incremental-search"
+install_for_atom "Caskroom/cask/keycastr"
+

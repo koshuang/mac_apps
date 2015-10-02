@@ -91,11 +91,12 @@ function install_homebrew {
 
 function install_by_homebrew {
   app=$1
+  params=$2
 
   if brew list -1 | grep -q "^${app}\$"; then
     echo $app already installed.
   else
-    brew install "$app"
+    brew install "$app $params"
     echo "$app has been installed."
   fi
 }
@@ -181,7 +182,7 @@ install_by_homebrew "zsh"
 install_oh_my_zsh
 
 # vim & spf13
-install_by_homebrew "vim"
+install_by_homebrew "vim" "--with-lua"
 # sudo ln -fs /usr/local/bin/vim /usr/bin/vi
 install_spf13
 

@@ -171,6 +171,8 @@ install_by_homebrew "ansible"
 install_by_homebrew "hub"
 install_by_homebrew "phantomjs"
 install_by_homebrew "tig"
+install_by_homebrew "Caskroom/cask/keycastr"
+install_by_homebrew "terminal-notifier"
 
 install_rvm
 
@@ -199,5 +201,4 @@ install_for_atom "minimap-find-and-replace"
 install_for_atom "minimap-git-diff"
 install_for_atom "minimap-highlight-selected"
 install_for_atom "incremental-search"
-install_for_atom "Caskroom/cask/keycastr"
 

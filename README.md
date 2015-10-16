@@ -57,6 +57,8 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * minimap-highlight-selected
   * phantomjs
   * incremental-search
+  * trailing-spaces
+  * atom-ternjs
 
 
 ## How to contribute

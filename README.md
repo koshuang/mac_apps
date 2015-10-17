@@ -59,6 +59,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * incremental-search
   * trailing-spaces
   * atom-ternjs
+  * open-in-browser
 
 
 ## How to contribute

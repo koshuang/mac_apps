@@ -60,6 +60,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * trailing-spaces
   * atom-ternjs
   * open-in-browser
+  * last-cursor-position
 
 
 ## How to contribute

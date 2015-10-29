@@ -174,6 +174,7 @@ install_by_homebrew "phantomjs"
 install_by_homebrew "tig"
 install_by_homebrew "Caskroom/cask/keycastr"
 install_by_homebrew "terminal-notifier"
+install_by_homebrew "iotop"
 
 install_rvm
 

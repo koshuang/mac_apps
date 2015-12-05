@@ -62,6 +62,8 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * atom-ternjs
   * open-in-browser
   * last-cursor-position
+  * language-javascript-jsx
+  * react
 
 
 ## How to contribute

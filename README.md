@@ -43,6 +43,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * iotop
 * Install packages for Atom
   * autocomplete-ruby
+  * atom-beautify
   * Atom-Syntax-highlighting-for-Sass
   * esformatter
   * highlight-selected
@@ -51,6 +52,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * language-docker
   * linter
   * linter-jshint
+  * linter-sass-lint
   * merge-conflicts
   * minimap
   * minimap-find-and-replace

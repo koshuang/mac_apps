@@ -189,6 +189,7 @@ install_spf13
 
 # Atom plugins
 install_for_atom "autocomplete-ruby"
+install_for_atom "atom-beautify"
 install_for_atom "Atom-Syntax-highlighting-for-Sass"
 install_for_atom "highlight-selected"
 install_for_atom "esformatter"
@@ -197,6 +198,7 @@ install_for_atom "jshint"
 install_for_atom "language-docker"
 install_for_atom "linter"
 install_for_atom "linter-jshint"
+install_for_atom "linter-sass-lint"
 install_for_atom "merge-conflicts"
 install_for_atom "minimap"
 install_for_atom "minimap-find-and-replace"

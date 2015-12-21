@@ -66,6 +66,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * last-cursor-position
   * language-javascript-jsx
   * react
+  * pigments
 
 
 ## How to contribute

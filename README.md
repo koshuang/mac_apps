@@ -67,6 +67,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * language-javascript-jsx
   * react
   * pigments
+  * editorconfig
 
 
 ## How to contribute

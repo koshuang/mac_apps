@@ -68,6 +68,7 @@ curl -s https://raw.githubusercontent.com/koshuang/mac_apps/master/install.sh | 
   * react
   * pigments
   * editorconfig
+  * autocomplete-sass
 
 
 ## How to contribute
